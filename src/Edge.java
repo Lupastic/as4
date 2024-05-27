@@ -8,28 +8,4 @@ public class Edge<Vertex> {
         this.destination = destination;
         this.weight = weight;
     }
-
-    public Double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(Double weight) {
-        this.weight = weight;
-    }
-
-    public Vertex getDestination() {
-        return destination;
-    }
-
-    public void setDestination(Vertex destination) {
-        this.destination = destination;
-    }
-
-    public Vertex getSource() {
-        return source;
-    }
-
-    public void setSource(Vertex source) {
-        this.source = source;
-    }
 }
