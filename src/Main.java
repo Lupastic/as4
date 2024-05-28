@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        WeightedGraph<String> weightedGraph = new WeightedGraph<>(true);
+        WeightedGraph<String> weightedGraph = new WeightedGraph<String>(true);
         fillWithWeights(weightedGraph);
 
         System.out.println("Dijkstra:");
@@ -15,18 +15,18 @@ public class Main {
         fillWithoutWeights(graph);
 
         System.out.println("DFS:");
-        Search<String> dfs = new DepthFirstSearch<>(graph, "Almaty");
+        Search<String> dfs = new DepthFirstSearch(graph, "Almaty");
         outputPath(dfs, "Kyzylorda");
 
         System.out.println("--------------------------------");
 
         System.out.println("BFS:");
-        Search<String> bfs = new BreadthFirstSearch<>(graph, "Almaty");
+        Search<String> bfs = new Search<String>(graph, "Almaty");
         outputPath(bfs, "Kyzylorda");
     }
 
     public static void fillWithoutWeights(MyGraph<String> graph) {
-        graph.addEdge("Almaty", "Astana"); // 16 - 19
+        graph.addEdge("Almaty", "Astana");
         graph.addEdge("Shymkent", "Atyrau");
         graph.addEdge("Atyrau", "Astana");
         graph.addEdge("Almaty", "Shymkent");
