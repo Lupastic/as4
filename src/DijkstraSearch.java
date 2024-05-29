@@ -2,7 +2,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-public class Algorithm {
+public class DijkstraSearch {
+
+    public DijkstraSearch(WeightedGraph<String> weightedGraph, String almaty) {
+    }
 
     static class HeapNode<V extends Vertex> implements Comparable<HeapNode<V>> {
         V vertex;
@@ -12,7 +15,6 @@ public class Algorithm {
             this.vertex = vertex;
             this.priority = priority;
         }
-
         @Override
         public int compareTo(HeapNode<V> other) {
             return Double.compare(this.priority, other.priority);

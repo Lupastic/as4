@@ -50,10 +50,6 @@ public class Edge<Vertex, V, Double> {
 
     @Override
     public String toString() {
-        return "Edge{" +
-                "source=" + source +
-                ", destination=" + destination +
-                ", weight=" + weight +
-                '}';
+        return "Edge: " +"source:" + source +", destination:" + destination +", weight:" + weight;
     }
 }

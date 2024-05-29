@@ -10,28 +10,17 @@ public class Vertex {
         this.attributes = new HashMap<>();
     }
 
-    // Получение идентификатора вершины
-    public String getId() {
-        return id;
-    }
-
-    // Добавление атрибута к вершине
     public void addAttribute(String key, Object value) {
         attributes.put(key, value);
     }
 
-    // Получение атрибута вершины
     public Object getAttribute(String key) {
         return attributes.get(key);
     }
 
-    // Вывод информации о вершине
     @Override
     public String toString() {
-        return "Vertex{" +
-                "id='" + id + '\'' +
-                ", attributes=" + attributes +
-                '}';
+        return "Vertex{" +"id='" + id + '\'' + ", attributes=" + attributes;
     }
 
     @Override
